@@ -10,18 +10,28 @@
 
 :root{
 --navy:#2f3e50;
+--taupe:#8a7f73;
+}
+
+*{
+box-sizing:border-box;
+}
+
+html, body{
+margin:0;
+padding:0;
+width:100%;
 }
 
 body{
-margin:0;
-padding:40px;
 font-family:Trebuchet MS, Verdana, Arial, sans-serif;
-background:#8a7f73;
+background:var(--taupe);
 }
 
 /* Toolbar */
 
 .topbar{
+width:100%;
 height:84px;
 background:var(--navy);
 color:#fff;
@@ -33,7 +43,8 @@ padding:0 18px;
 box-shadow:0 2px 0 rgba(0,0,0,.15);
 position:sticky;
 top:0;
-z-index:20
+z-index:20;
+margin:0;
 }
 
 .brand{
@@ -43,23 +54,31 @@ font-weight:700;
 font-size:20px;
 padding:10px 14px;
 border-bottom-right-radius:10px;
-box-shadow:inset 0 0 0 2px rgba(0,0,0,.15)
+box-shadow:inset 0 0 0 2px rgba(0,0,0,.15);
 }
 
 .nav{
 display:flex;
 gap:26px;
 font-size:18px;
-font-weight:700
+font-weight:700;
 }
 
 .nav a{
 color:#fff;
-text-decoration:none
+text-decoration:none;
 }
 
 .nav a:hover{
-text-decoration:underline
+text-decoration:underline;
+}
+
+/* Page content */
+
+.pageContent{
+max-width:1180px;
+margin:0 auto;
+padding:40px;
 }
 
 /* Tile Grid */
@@ -69,7 +88,7 @@ display:grid;
 grid-template-columns:repeat(5, 1fr);
 gap:20px;
 max-width:1100px;
-margin:40px auto;
+margin:0 auto;
 }
 
 .canvasBox{
@@ -121,6 +140,8 @@ display:block;
 <a href="#">Research</a>
 </nav>
 </header>
+
+<div class="pageContent">
 
 <div class="canvasGrid">
 
@@ -191,6 +212,8 @@ display:block;
 <div class="canvasBox">
 <div class="title">Building</div>
 <div class="subtitle">Ten</div>
+</div>
+
 </div>
 
 </div>
