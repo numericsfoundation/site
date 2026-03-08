@@ -28,8 +28,6 @@ font-family:Trebuchet MS, Verdana, Arial, sans-serif;
 background:var(--taupe);
 }
 
-/* Toolbar */
-
 .topbar{
 width:100%;
 height:84px;
@@ -55,6 +53,7 @@ font-size:20px;
 padding:10px 14px;
 border-bottom-right-radius:10px;
 box-shadow:inset 0 0 0 2px rgba(0,0,0,.15);
+text-decoration:none;
 }
 
 .nav{
@@ -73,15 +72,35 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-/* Page content */
-
 .pageContent{
 max-width:1180px;
 margin:0 auto;
 padding:40px;
 }
 
-/* Tile Grid */
+.gradeHeader{
+max-width:1100px;
+margin:0 auto 28px;
+display:flex;
+justify-content:center;
+}
+
+.gradeButton{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+max-width:420px;
+min-height:110px;
+padding:24px 28px;
+border-radius:18px;
+background:var(--navy);
+color:#fff;
+text-decoration:none;
+font-size:42px;
+font-weight:700;
+box-shadow:0 8px 18px rgba(0,0,0,.22);
+}
 
 .canvasGrid{
 display:grid;
@@ -125,14 +144,53 @@ color:inherit;
 display:block;
 }
 
+@media (max-width: 1100px){
+.canvasGrid{
+grid-template-columns:repeat(3, 1fr);
+}
+}
+
+@media (max-width: 760px){
+.topbar{
+height:auto;
+padding:14px 18px;
+flex-wrap:wrap;
+}
+
+.nav{
+flex-wrap:wrap;
+gap:16px;
+font-size:16px;
+}
+
+.pageContent{
+padding:24px;
+}
+
+.gradeButton{
+font-size:34px;
+min-height:96px;
+}
+
+.canvasGrid{
+grid-template-columns:repeat(2, 1fr);
+}
+}
+
+@media (max-width: 520px){
+.canvasGrid{
+grid-template-columns:1fr;
+}
+}
+
 </style>
 </head>
 
 <body>
 
 <header class="topbar">
-<a href="./index.html" class="brand">Numerics Foundations</a>
-  
+<a href="../index.html" class="brand">Numerics Foundations</a>
+
 <nav class="nav">
 <a href="#">Program</a>
 <a href="slides.html">Lesson Slides</a>
@@ -143,26 +201,40 @@ display:block;
 
 <div class="pageContent">
 
+<div class="gradeHeader">
+<div class="gradeButton">Kindergarten</div>
+</div>
+
 <div class="canvasGrid">
 
 <a class="canvasLink" href="https://www.canva.com/design/DAGwdRnK6Ko/6OQRSmeDXxQL-wsJZExQfg/view?utm_content=DAGwdRnK6Ko&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd5d151bbaa" target="_blank">
-<div class="canvasBox"><div class="title">Knowing One</div></div>
+<div class="canvasBox">
+<div class="title">Knowing One</div>
+</div>
 </a>
 
 <a class="canvasLink" href="https://www.canva.com/design/DAGwhYH_9lM/Hgow6kji8CXGfBxgwt08dw/view?utm_content=DAGwhYH_9lM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3fb63f41e" target="_blank">
-<div class="canvasBox"><div class="title">Knowing Two</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Two</div>
+</div>
 </a>
 
 <a class="canvasLink" href="https://www.canva.com/design/DAG3kCNcNQg/jOWQ0w_F5QXewnctORJr_w/view?utm_content=DAG3kCNcNQg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfffbbfe332" target="_blank">
-<div class="canvasBox"><div class="title">Knowing Three</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Three</div>
+</div>
 </a>
 
 <a class="canvasLink" href="https://www.canva.com/design/DAG3rUEI9SI/aeNjOw1TuW6l6rIqoUI3rg/view?utm_content=DAG3rUEI9SI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d0d499155" target="_blank">
-<div class="canvasBox"><div class="title">Knowing Four</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Four</div>
+</div>
 </a>
 
 <a class="canvasLink" href="https://www.canva.com/design/DAG5mnKbBkk/23FKyHpLAl-N13XJdn-low/view?utm_content=DAG5mnKbBkk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4e439514b0" target="_blank">
-<div class="canvasBox"><div class="title">Knowing Five</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Five</div>
+</div>
 </a>
 
 <div class="canvasBox">
@@ -186,28 +258,36 @@ display:block;
 <div class="subtitle">Six</div>
 </div>
 
-<div class="canvasBox"><div class="title">Knowing Seven</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Seven</div>
+</div>
 
 <div class="canvasBox">
 <div class="title">Building</div>
 <div class="subtitle">Seven</div>
 </div>
 
-<div class="canvasBox"><div class="title">Knowing Eight</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Eight</div>
+</div>
 
 <div class="canvasBox">
 <div class="title">Building</div>
 <div class="subtitle">Eight</div>
 </div>
 
-<div class="canvasBox"><div class="title">Knowing Nine</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Nine</div>
+</div>
 
 <div class="canvasBox">
 <div class="title">Building</div>
 <div class="subtitle">Nine</div>
 </div>
 
-<div class="canvasBox"><div class="title">Knowing Ten</div></div>
+<div class="canvasBox">
+<div class="title">Knowing Ten</div>
+</div>
 
 <div class="canvasBox">
 <div class="title">Building</div>
