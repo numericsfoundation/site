@@ -30,14 +30,25 @@ box-shadow:0 6px 12px rgba(0,0,0,0.15);
 height:130px;
 background:#ffffff;
 display:flex;
+flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:#1f3a60;
+padding:10px;
+}
+
+.title{
 font-size:20px;
 font-weight:700;
 text-shadow:1px 1px 2px rgba(0,0,0,0.15);
-padding:10px;
+}
+
+.subtitle{
+font-size:18px;
+margin-top:4px;
+font-weight:600;
+text-shadow:1px 1px 2px rgba(0,0,0,0.15);
 }
 
 </style>
@@ -47,25 +58,56 @@ padding:10px;
 
 <div class="canvasGrid">
 
-<div class="canvasBox">Knowing One</div>
-<div class="canvasBox">Knowing Two</div>
-<div class="canvasBox">Knowing Three</div>
-<div class="canvasBox">Knowing Four</div>
-<div class="canvasBox">Knowing Five</div>
+<div class="canvasBox"><div class="title">Knowing One</div></div>
+<div class="canvasBox"><div class="title">Knowing Two</div></div>
+<div class="canvasBox"><div class="title">Knowing Three</div></div>
+<div class="canvasBox"><div class="title">Knowing Four</div></div>
+<div class="canvasBox"><div class="title">Knowing Five</div></div>
 
-<div class="canvasBox">Building One to Five</div>
-<div class="canvasBox">Knowing Six</div>
-<div class="canvasBox">Building Six</div>
-<div class="canvasBox">Knowing Seven</div>
-<div class="canvasBox">Building Seven</div>
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">One to Three</div>
+</div>
 
-<div class="canvasBox">Knowing Eight</div>
-<div class="canvasBox">Building Eight</div>
-<div class="canvasBox">Knowing Nine</div>
-<div class="canvasBox">Building Nine</div>
-<div class="canvasBox">Knowing Ten</div>
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">One to Five</div>
+</div>
 
-<div class="canvasBox">Building Ten</div>
+<div class="canvasBox"><div class="title">Knowing Six</div></div>
+
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">Six</div>
+</div>
+
+<div class="canvasBox"><div class="title">Knowing Seven</div></div>
+
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">Seven</div>
+</div>
+
+<div class="canvasBox"><div class="title">Knowing Eight</div></div>
+
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">Eight</div>
+</div>
+
+<div class="canvasBox"><div class="title">Knowing Nine</div></div>
+
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">Nine</div>
+</div>
+
+<div class="canvasBox"><div class="title">Knowing Ten</div></div>
+
+<div class="canvasBox">
+<div class="title">Building</div>
+<div class="subtitle">Ten</div>
+</div>
 
 </div>
 
